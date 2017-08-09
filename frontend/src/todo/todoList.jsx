@@ -12,7 +12,7 @@ export default props => {
                 <td> 
                     <IcoButton style='success' icon='check'   hide={todo.done}  onClick={() => props.handleMarkAsDone(todo)}></IcoButton> 
                     <IcoButton style='danger'  icon='trash-o' hide={!todo.done} onClick={() => props.handleRemove(todo)}></IcoButton> 
-                    <IcoButton style='warning' icon='undo'    hide={!todo.done} onClick={() => props.handleMarkAsPending(todo)}></IcoButton> 
+                    <IcoButton style='warning' icon='undo'    fhide={!todo.done} onClick={() => props.handleMarkAsPending(todo)}></IcoButton> 
 
 
                 </td>
@@ -25,7 +25,7 @@ export default props => {
             <thead>
                 <tr>
                     <th>Descrição</th>
-                    <th>Ações</th>
+                    <th className='tableActions'>Ações</th>
                 </tr>
             </thead>
             <tbody>
