@@ -75,7 +75,7 @@ class TodoComponent extends Component {
                                 handleAdd={this.handleAdd}>
 
                     </TodoForm>
-                    <TodoList list={this.state.list} 
+                    <TodoList
                                 handleRemove={this.handleRemove} 
                                 handleMarkAsPending={this.handleMarkAsPending} 
                                 handleMarkAsDone={this.handleMarkAsDone}>
